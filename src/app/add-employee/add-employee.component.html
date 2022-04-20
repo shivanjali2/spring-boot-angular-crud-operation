@@ -1,0 +1,25 @@
+
+
+<div class="container col-5">
+    <br>
+    <br>
+    <h3 style="text-align: center;">Add Employee</h3>
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">First_name</label>
+      <input type="text" class="form-control" id="FirstName" name="first_name" placeholder="Enter the name" [(ngModel)]="employee.first_name">
+      </div>
+    <br>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Email</label>
+      <input type="email" class="form-control" id="Email" name="email" placeholder="Enter the mail" [(ngModel)]="employee.email">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleInputPassword1">phone Number</label>
+        <input type="text" class="form-control" id="Phnumber" name="Phno"  placeholder="Enter phone number" [(ngModel)]="employee.phno">
+      </div>
+    <br>
+    <button type="submit" (click)="addEmployee()" class="btn btn-primary">Submit</button>
+  </form>
+</div>
